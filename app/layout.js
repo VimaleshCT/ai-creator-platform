@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "sonner";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
-import { shadesOfPurple } from "@clerk/themes";
+import { shadesOfteal } from "@clerk/themes";
 import { ConvexClientProvider } from "@/components/convex-client-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           <ClerkProvider
             publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
             appearance={{
-              baseTheme: shadesOfPurple,
+              baseTheme: shadesOfteal,
             }}
           >
             <ConvexClientProvider>

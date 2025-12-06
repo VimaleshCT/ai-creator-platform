@@ -84,7 +84,7 @@ export default function SettingsPage() {
     return (
       <div className="flex items-center justify-center min-h-96">
         <div className="text-center">
-          <Loader2 className="h-8 w-8 animate-spin text-purple-400 mx-auto" />
+          <Loader2 className="h-8 w-8 animate-spin text-teal-400 mx-auto" />
           <p className="text-slate-400 mt-4">Loading settings...</p>
         </div>
       </div>

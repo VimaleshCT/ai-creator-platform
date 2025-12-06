@@ -45,11 +45,11 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden relative">
       {/* Animated gradient background */}
-      <div className="fixed inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-green-900/20 animate-pulse"></div>
+      <div className="fixed inset-0 bg-gradient-to-br from-teal-900/20 via-teal-900/20 to-green-900/20 animate-pulse"></div>
 
       {/* Dynamic cursor effect */}
       <div
-        className="fixed w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl pointer-events-none z-0"
+        className="fixed w-96 h-96 bg-gradient-to-r from-teal-500/20 to-teal-500/20 rounded-full blur-3xl pointer-events-none z-0"
         style={{
           left: mousePosition.x - 192,
           top: mousePosition.y - 192,
@@ -64,17 +64,17 @@ const Home = () => {
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-7xl lg:text-8xl font-black leading-none tracking-tight">
                 <span className="block font-black text-white">Create.</span>
-                <span className="block font-light italic text-purple-300">
+                <span className="block font-light italic text-teal-300">
                   Publish.
                 </span>
-                <span className="block font-black bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent">
+                <span className="block font-black bg-gradient-to-r from-teal-400 via-teal-400 to-green-400 bg-clip-text text-transparent">
                   Grow.
                 </span>
               </h1>
 
               <p className="text-lg sm:text-xl md:text-2xl text-gray-300 font-light leading-relaxed max-w-2xl md:max-w-none">
                 The AI-powered platform that turns your ideas into{" "}
-                <span className="text-purple-300 font-semibold">
+                <span className="text-teal-300 font-semibold">
                   engaging content
                 </span>{" "}
                 and helps you build a thriving creator business.
@@ -140,7 +140,7 @@ const Home = () => {
           {/* Interactive 3D-style elements */}
           <div>
             <Image
-              src="/banner1.png"
+              src="/banner2.png"
               alt="Platform Banner"
               width={500}
               height={700}
@@ -154,7 +154,7 @@ const Home = () => {
       {/* Features Grid */}
       <section
         id="features"
-        className="relative mt-14 z-10 py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-gray-900/50 to-purple-900/20"
+        className="relative mt-14 z-10 py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-gray-900/50 to-teal-900/20"
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
@@ -219,7 +219,7 @@ const Home = () => {
                       <div
                         className={`w-12 h-12 rounded-xl flex items-center justify-center ${
                           activeTab === index
-                            ? "bg-gradient-to-br from-purple-500 to-blue-500"
+                            ? "bg-gradient-to-br from-teal-500 to-teal-500"
                             : "bg-muted"
                         }`}
                       >
@@ -261,7 +261,7 @@ const Home = () => {
       </section>
 
       {/* Social Proof */}
-      <section className="relative z-10 py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-gray-900/50 to-purple-900/20">
+      <section className="relative z-10 py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-gray-900/50 to-teal-900/20">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-12 sm:mb-16">
             <span className="gradient-text-primary">
@@ -272,7 +272,7 @@ const Home = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 lg:gap-8">
             {socialProofStats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-teal-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <stat.icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
                 </div>
                 <div className="text-3xl sm:text-4xl lg:text-5xl font-black mb-2 gradient-text-accent">
@@ -347,7 +347,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative z-10 py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-gray-900/50 to-purple-900/20">
+      <section className="relative z-10 py-16 sm:py-24 px-4 sm:px-6 bg-gradient-to-r from-gray-900/50 to-teal-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6 sm:mb-8">
             <span className="gradient-text-primary">Ready to create?</span>
@@ -385,7 +385,7 @@ const Home = () => {
     
                <footer className="relative z-10 border-t py-8 px-4 sm:px-6 overflow-hidden">
                 {/* background animation */}
-                <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-blue-500/10 animate-gradient"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 via-teal-500/10 to-teal-500/10 animate-gradient"></div>
 
                 <div className="relative max-w-7xl mx-auto text-center animate-fadeUp">
                   <p className="text-muted-foreground">

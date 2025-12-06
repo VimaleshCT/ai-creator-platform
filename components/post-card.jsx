@@ -41,7 +41,7 @@ const PostCard = ({
       if (post.scheduledFor && post.scheduledFor > Date.now()) {
         return {
           variant: "secondary",
-          className: "bg-blue-500/20 text-blue-300 border-blue-500/30",
+          className: "bg-teal-500/20 text-teal-300 border-teal-500/30",
           label: "Scheduled",
         };
       }
@@ -74,7 +74,7 @@ const PostCard = ({
 
   return (
     <Card
-      className={`card-glass hover:border-purple-500/50 transition-colors ${className}`}
+      className={`card-glass hover:border-teal-500/50 transition-colors ${className}`}
     >
       <CardContent>
         <div className="space-y-4">
@@ -106,7 +106,7 @@ const PostCard = ({
                   {statusBadge.label}
                 </Badge>
                 {post.scheduledFor && post.scheduledFor > Date.now() && (
-                  <div className="flex items-center text-xs text-blue-400">
+                  <div className="flex items-center text-xs text-teal-400">
                     <Calendar className="h-3 w-3 mr-1" />
                     {new Date(post.scheduledFor).toLocaleDateString()}
                   </div>
@@ -117,7 +117,7 @@ const PostCard = ({
                 href={publicUrl || "#"}
                 className={!publicUrl ? "pointer-events-none" : ""}
               >
-                <h3 className="text-xl font-bold text-white hover:text-purple-300 transition-colors line-clamp-2">
+                <h3 className="text-xl font-bold text-white hover:text-teal-300 transition-colors line-clamp-2">
                   {post.title}
                 </h3>
               </Link>
@@ -181,7 +181,7 @@ const PostCard = ({
                     sizes="32px"
                   />
                 ) : (
-                  <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-sm font-bold">
+                  <div className="w-full h-full rounded-full bg-gradient-to-br from-teal-600 to-teal-400 flex items-center justify-center text-sm font-bold">
                     {post.author.name.charAt(0).toUpperCase()}
                   </div>
                 )}
@@ -206,7 +206,7 @@ const PostCard = ({
                 <Badge
                   key={tag}
                   variant="secondary"
-                  className="bg-purple-500/20 text-purple-300 border-purple-500/30 text-xs"
+                  className="bg-teal-500/20 text-teal-300 border-teal-500/30 text-xs"
                 >
                   {tag}
                 </Badge>

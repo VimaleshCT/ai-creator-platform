@@ -72,7 +72,7 @@ const PostPage = ({ params }) => {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-500 mx-auto mb-4"></div>
           <p className="text-slate-400">Loading post...</p>
         </div>
       </div>
@@ -168,7 +168,7 @@ const PostPage = ({ params }) => {
                         sizes="48px"
                       />
                     ) : (
-                      <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-lg font-bold">
+                      <div className="w-full h-full rounded-full bg-gradient-to-br from-teal-600 to-teal-400 flex items-center justify-center text-lg font-bold">
                         {post.author.name.charAt(0).toUpperCase()}
                       </div>
                     )}
@@ -207,7 +207,7 @@ const PostPage = ({ params }) => {
                   <Badge
                     key={tag}
                     variant="secondary"
-                    className="bg-purple-500/20 text-purple-300 border-purple-500/30"
+                    className="bg-teal-500/20 text-teal-300 border-teal-500/30"
                   >
                     {tag}
                   </Badge>
@@ -218,7 +218,7 @@ const PostPage = ({ params }) => {
 
           {/* Post Content */}
           <div
-            className="prose prose-lg max-w-none prose-invert prose-purple"
+            className="prose prose-lg max-w-none prose-invert prose-teal"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
@@ -313,7 +313,7 @@ const PostPage = ({ params }) => {
                               sizes="32px"
                             />
                           ) : (
-                            <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-sm font-bold">
+                            <div className="w-full h-full rounded-full bg-gradient-to-br from-teal-600 to-teal-400 flex items-center justify-center text-sm font-bold">
                               {comment.author?.name?.charAt(0).toUpperCase()}
                             </div>
                           )}

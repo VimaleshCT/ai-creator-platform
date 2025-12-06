@@ -94,7 +94,7 @@ export default function PostsPage() {
     return (
       <div className="flex items-center justify-center min-h-96">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-400 mx-auto"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-teal-400 mx-auto"></div>
           <p className="text-slate-400 mt-4">Loading your posts...</p>
         </div>
       </div>

@@ -109,7 +109,7 @@ export default function DashboardLayout({ children }) {
                   className={cn(
                     "flex items-center space-x-3 px-4 py-3 rounded-xl transition-all duration-200 group",
                     isActive
-                      ? "bg-gradient-to-r from-purple-600/20 to-blue-600/20 border border-purple-500/30 text-white"
+                      ? "bg-gradient-to-r from-teal-600/20 to-teal-400/20 border border-teal-500/30 text-white"
                       : "text-slate-300 hover:text-white hover:bg-slate-700/50"
                   )}
                 >
@@ -117,7 +117,7 @@ export default function DashboardLayout({ children }) {
                     className={cn(
                       "h-5 w-5 transition-colors",
                       isActive
-                        ? "text-purple-400"
+                        ? "text-teal-400"
                         : "text-slate-400 group-hover:text-white"
                     )}
                   />

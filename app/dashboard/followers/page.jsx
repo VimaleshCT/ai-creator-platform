@@ -32,7 +32,7 @@ const UserCard = ({
                 sizes="40px"
               />
             ) : (
-              <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-sm font-bold">
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-teal-600 to-teal-400 flex items-center justify-center text-sm font-bold">
                 {user.name.charAt(0).toUpperCase()}
               </div>
             )}
@@ -40,7 +40,7 @@ const UserCard = ({
         </Link>
         <Link href={user.username ? `/${user.username}` : ""}>
           <div className="cursor-pointer">
-            <p className="font-medium text-white hover:text-purple-300">
+            <p className="font-medium text-white hover:text-teal-300">
               {user.name}
             </p>
             {user.username && (
@@ -58,7 +58,7 @@ const UserCard = ({
             disabled={isLoading}
             variant="outline"
             size="sm"
-            className="border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white"
+            className="border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white"
           >
             {isLoading ? (
               <Loader2 className="h-4 w-4 animate-spin" />

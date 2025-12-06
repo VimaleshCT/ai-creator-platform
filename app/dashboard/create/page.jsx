@@ -22,7 +22,7 @@ export default function CreatePostPage() {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="flex items-center space-x-3">
-          <Loader2 className="h-6 w-6 animate-spin text-purple-400" />
+          <Loader2 className="h-6 w-6 animate-spin text-teal-400" />
           <span className="text-slate-300">Loading...</span>
         </div>
       </div>

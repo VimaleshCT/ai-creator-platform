@@ -52,7 +52,7 @@ export default function ProfilePage({ params }) {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-500 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-500 mx-auto mb-4"></div>
           <p className="text-slate-400">Loading profile...</p>
         </div>
       </div>
@@ -98,7 +98,7 @@ export default function ProfilePage({ params }) {
                 sizes="96px"
               />
             ) : (
-              <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-2xl font-bold">
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-teal-600 to-teal-400 flex items-center justify-center text-2xl font-bold">
                 {user.name.charAt(0).toUpperCase()}
               </div>
             )}

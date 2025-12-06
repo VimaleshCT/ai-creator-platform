@@ -120,7 +120,7 @@ export default function FeedPage() {
                       sizes="40px"
                     />
                   ) : (
-                    <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-sm font-bold">
+                    <div className="w-full h-full rounded-full bg-gradient-to-br from-teal-600 to-teal-400 flex items-center justify-center text-sm font-bold">
                       {(currentUser.firstName || "U").charAt(0).toUpperCase()}
                     </div>
                   )}
@@ -137,7 +137,7 @@ export default function FeedPage() {
             {isLoading ? (
               <div className="flex justify-center py-12">
                 <div className="text-center">
-                  <Loader2 className="h-8 w-8 animate-spin text-purple-400 mx-auto mb-4" />
+                  <Loader2 className="h-8 w-8 animate-spin text-teal-400 mx-auto mb-4" />
                   <p className="text-slate-400">Loading posts...</p>
                 </div>
               </div>
@@ -179,7 +179,7 @@ export default function FeedPage() {
                 {/* Load More Indicator */}
                 {activeTab === "feed" && feedData?.hasMore && (
                   <div ref={loadMoreRef} className="flex justify-center py-8">
-                    <Loader2 className="h-6 w-6 animate-spin text-purple-400" />
+                    <Loader2 className="h-6 w-6 animate-spin text-teal-400" />
                   </div>
                 )}
               </>
@@ -199,7 +199,7 @@ export default function FeedPage() {
               <CardContent>
                 {suggestionsLoading ? (
                   <div className="flex justify-center py-4">
-                    <Loader2 className="h-5 w-5 animate-spin text-purple-400" />
+                    <Loader2 className="h-5 w-5 animate-spin text-teal-400" />
                   </div>
                 ) : !suggestedUsers || suggestedUsers.length === 0 ? (
                   <div className="text-center py-4">
@@ -224,7 +224,7 @@ export default function FeedPage() {
                                     sizes="40px"
                                   />
                                 ) : (
-                                  <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center text-sm font-bold">
+                                  <div className="w-full h-full rounded-full bg-gradient-to-br from-teal-600 to-teal-400 flex items-center justify-center text-sm font-bold">
                                     {user.name.charAt(0).toUpperCase()}
                                   </div>
                                 )}
@@ -243,7 +243,7 @@ export default function FeedPage() {
                             onClick={() => handleFollowToggle(user._id)}
                             variant="outline"
                             size="sm"
-                            className="border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white"
+                            className="border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white"
                           >
                             <UserPlus className="h-3 w-3 mr-1" />
                             Follow

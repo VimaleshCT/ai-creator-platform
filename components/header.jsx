@@ -53,13 +53,13 @@ export default function Header() {
           <div className="hidden lg:flex space-x-6 flex-1 justify-center">
             <Link
               href="#features"
-              className="text-white font-medium transition-all duration-300 hover:text-purple-300 cursor-pointer"
+              className="text-white font-medium transition-all duration-300 hover:text-teal-300 cursor-pointer"
             >
               Features
             </Link>
             <Link
               href="#testimonials"
-              className="text-white font-medium transition-all duration-300 hover:text-purple-300 cursor-pointer"
+              className="text-white font-medium transition-all duration-300 hover:text-teal-300 cursor-pointer"
             >
               Testimonials
             </Link>

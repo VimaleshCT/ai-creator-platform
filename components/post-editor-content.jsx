@@ -190,7 +190,7 @@ export default function PostEditorContent({
                 disabled={!hasTitle || isGenerating || isImproving}
                 variant="outline"
                 size="sm"
-                className="border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white disabled:opacity-50 w-full"
+                className="border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white disabled:opacity-50 w-full"
               >
                 <Wand2 className="h-4 w-4 mr-2" />
                 Generate Content with AI
@@ -199,7 +199,7 @@ export default function PostEditorContent({
               <div className="grid grid-cols-3 w-full gap-2">
                 {[
                   { type: "enhance", icon: Sparkles, color: "green" },
-                  { type: "expand", icon: Plus, color: "blue" },
+                  { type: "expand", icon: Plus, color: "teal" },
                   { type: "simplify", icon: Minus, color: "orange" },
                 ].map(({ type, icon: Icon, color }) => (
                   <Button

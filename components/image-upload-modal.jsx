@@ -289,7 +289,7 @@ export default function ImageUploadModal({
               {...getRootProps()}
               className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors ${
                 isDragActive
-                  ? "border-purple-400 bg-purple-400/10"
+                  ? "border-teal-400 bg-teal-400/10"
                   : "border-slate-600 hover:border-slate-500"
               }`}
             >
@@ -297,7 +297,7 @@ export default function ImageUploadModal({
 
               {isUploading ? (
                 <div className="space-y-4">
-                  <Loader2 className="h-12 w-12 mx-auto animate-spin text-purple-400" />
+                  <Loader2 className="h-12 w-12 mx-auto animate-spin text-teal-400" />
                   <p className="text-slate-300">Uploading image...</p>
                 </div>
               ) : (
@@ -332,7 +332,7 @@ export default function ImageUploadModal({
                 </div>
                 <Button
                   onClick={() => setActiveTab("transform")}
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                  className="bg-gradient-to-r from-teal-600 to-teal-400 hover:from-teal-700 hover:to-teal-700"
                 >
                   <Wand2 className="h-4 w-4 mr-2" />
                   Start Transforming
@@ -621,7 +621,7 @@ export default function ImageUploadModal({
                     {isTransforming && (
                       <div className="absolute inset-0 bg-black/50 flex items-center justify-center rounded-lg">
                         <div className="bg-slate-800 rounded-lg p-4 flex items-center space-x-3">
-                          <Loader2 className="h-5 w-5 animate-spin text-purple-400" />
+                          <Loader2 className="h-5 w-5 animate-spin text-teal-400" />
                           <span className="text-white">
                             Applying transformations...
                           </span>

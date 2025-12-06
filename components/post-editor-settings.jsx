@@ -121,7 +121,7 @@ export default function PostEditorSettings({ isOpen, onClose, form, mode }) {
                   <Badge
                     key={index}
                     variant="secondary"
-                    className="bg-purple-500/20 text-purple-300 border-purple-500/30"
+                    className="bg-teal-500/20 text-teal-300 border-teal-500/30"
                   >
                     {tag}
                     <button
